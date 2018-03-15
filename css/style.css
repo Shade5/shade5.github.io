@@ -12,6 +12,11 @@
 	float: left;
 }
 
+img {
+	height: 300px;
+	width: auto;
+}
+
 .options {
 	background-color: white;
 	padding-top: 32px;
@@ -37,5 +42,5 @@
 .tiles {
 	background-color: transparent;
 	margin: 20px;
-	float: right;
+	float: left;
 }

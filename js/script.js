@@ -1,9 +1,7 @@
-function onHover()
-{
-    $("#menuImg").attr('src', 'images/green.jpeg');
-}
+$( function() {
 
-function offHover()
-{
-    $("#menuImg").attr('src', 'images/darkgreen.jpeg');
-}
+	$('.tiles').on('mouseover', function() {
+		$( this ).hide(1000);
+	});
+
+});

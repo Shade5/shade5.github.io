@@ -7,43 +7,44 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script       src="https://code.jquery.com/jquery-3.3.1.min.js"
-					  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-					  crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script  src="js/script.js" ></script>
 	</head>
 	 
 	<body background="images/gpug.jpg">
 
-		<div class=title>
-			<h1 id="maintitle"> MACANATIONS </h1>
+		<div>
+			<div class=title>
+				<h1 id="maintitle"> MACANATIONS </h1>
+			</div>
+
+			<div class=options>
+				<h2> blog</h2>
+			</div>
+			<div class=options>
+				<h2> about </h2>
+			</div>
+			<div class=options>
+				<h2> contact </h2>
+			</div>
+
+			<div class=hbar>
+			</div>
+			<br/>
 		</div>
 
-		<div class=options>
-			<h2> blog</h2>
-		</div>
-		<div class=options>
-			<h2> about </h2>
-		</div>
-		<div class=options>
-			<h2> contact </h2>
+		<div>
+			<p id="maintiles"></p>
 		</div>
 
-		<div class=hbar>
-		</div>
-
-		<div id="tile1" class="tiles">  
-		    <img id="tileimg" src="images/1.jpg" alt="tile", width="400" />
-		</div>
-		<div id="tile2" class="tiles">  
-		    <img id="tileimg" src="images/2.jpg" alt="tile", width="400" />
-		</div>
-		<div id="tile3" class="tiles">  
-		    <img id="tileimg" src="images/3.jpg" alt="tile", width="400" />
-		</div>
-		<div id="tile4" class="tiles">  
-		    <img id="tileimg" src="images/4.jpg" alt="tile", width="400" />
-		</div>
+		<script>
+			var text = "";
+			var i;
+			for (i = 1; i < 8; i++) {
+			    text += "<div id=\"tile" +i+ "\" class=\"tiles\">  <img id=\"tileimg\" src=\"images/" +i+ ".jpg\" alt=\"tile\"/> </div>"
+			}
+			document.getElementById("maintiles").innerHTML = text;
+		</script>
 
 	</body>
   
