@@ -17,16 +17,35 @@ $( function() {
 	});
 
 	$('.options').on('click', function() {
-		var $chil = $( this )
-		var $sib = $( this ).siblings();
-		$sib.each(function() {
+		$('#arrow').hide('400');
+		var $current = $($(this).attr('data-optionsid'));
+		$( this ).siblings().each(function() {
 			$(this).removeClass('active')
 			$(this).addClass('inactive')
-			$($(this).attr('data-optionsid')).slideUp(500, function(){
-				$($chil.attr('data-optionsid')).slideDown(500);
-				$chil.addClass('active')
-				$chil.removeClass('inactive')
+		});
+
+		$( this ).addClass('active')
+		$( this ).removeClass('inactive')
+
+		var $sib = $($(this).attr('data-optionsid')).siblings()
+
+		$sib.each(function() {
+			$(this).slideUp(500, function(){
+				$current.slideDown(500);
 			});
 		});
+	});
+
+	$('.tiles').on('click', function() {
+		$('#maintiles').slideUp(500);
+		$('#arrow').show('400');
+		$details = $('#details');
+		projectid = $(this).attr('data-projectid');
+		$.get("data/"+projectid+".html", function(data) {
+			$details.html(data);
+		}).fail(function() {
+			$details.html("Failed to fetch data");
+		});
+		$details.slideDown('400');
 	});
 });

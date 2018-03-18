@@ -15,11 +15,12 @@
 
 		<div id=topbar>
 			<div class="title">
-				<h1 id="maintitle"> MACANATIONS </h1>
+				<h1 id="maintitle" ><a href="index.html">MACANATIONS</a></h1>
 			</div>
 			<div id=top-options>
-				<div class="options active" data-optionsid="#maintiles">
+				<div class="options active" data-optionsid="#maintiles" id="maintilesheader">
 					<h2> work </h2>
+					<h2 id=arrow > &#x25C0 </h2>
 				</div>
 				<div class="options inactive" data-optionsid="#about">
 					<h2> about </h2>
@@ -36,6 +37,10 @@
 		
 		<div class=data>
 			<div id="maintiles"></div>
+
+			<div id="details" class="inactivepage">
+				Failed to load project, wait for page to fully load!
+			</div>
 
 			<div  id="contact" class="inactivepage">
 				<div class="whitetiles"> 
@@ -59,9 +64,9 @@
 		<script>
 			var text = "";
 			var i;
-			var abstract = ["abc", "def", "ijk", "lmn", "opq", "rst", "uvw", "xyz", "121231jninb32bi3b1i3b b23byb3i 1b2ib", "ererer"];
+			var abstract = ["project1", "project2", "project3", "project4", "project5", "project5", "project6", "project7", "project8", "project9"];
 			for (i = 1; i < 11; i++) {
-			    text += "<div id=\"tile"+i+"\" class=\"tiles\"> <img id=\"tileimg\" src=\"images/"+i+".jpg\" alt=\"tile\"/> <div class=\"middle\"> <div class=\"text\">"+abstract[i]+"</div> </div> </div>"
+			    text += "<div id=\"tile"+i+"\" class=\"tiles\" data-projectid="+i+"> <img id=\"tileimg\" src=\"images/"+i+".jpg\" alt=\"tile\"/> <div class=\"middle\"> <div class=\"text\">"+abstract[i-1]+"</div> </div> </div>"
 			}
 			document.getElementById("maintiles").innerHTML = text;
 		</script>
