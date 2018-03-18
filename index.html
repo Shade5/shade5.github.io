@@ -11,21 +11,22 @@
 		<script  src="js/script.js" ></script>
 	</head>
 	 
-	<body background="images/gpug.jpg">
+	<body>
 
-		<div>
-			<div class=title>
+		<div id=topbar>
+			<div class="title">
 				<h1 id="maintitle"> MACANATIONS </h1>
 			</div>
-
-			<div class=options>
-				<h2> blog</h2>
-			</div>
-			<div class=options>
-				<h2> about </h2>
-			</div>
-			<div class=options>
-				<h2> contact </h2>
+			<div id=top-options>
+				<div class="options active" data-optionsid="#maintiles">
+					<h2> work </h2>
+				</div>
+				<div class="options inactive" data-optionsid="#about">
+					<h2> about </h2>
+				</div>
+				<div class="options inactive" data-optionsid="#contact">
+					<h2> contact </h2>
+				</div>
 			</div>
 
 			<div class=hbar>
@@ -34,21 +35,33 @@
 		</div>
 		
 		<div class=data>
-			<p id="maintiles"></p>
-			<!--
-			<div id="tile1" class="tiles">  
-				<img id="tileimg" src="images/1.jpg" alt="tile"/> 
-				<p class="text">Hey I am text on an Image. </p>
+			<div id="maintiles"></div>
+
+			<div  id="contact" class="inactivepage">
+				<div class="whitetiles"> 
+					<center>
+						<p style="text-align:center;">You can reach me at <a href="mailto:f20130112@goa.bits-pilani.ac.in">f20130112@goa.bits-pilani.ac.in</a></p>
+						<p style="text-align:center;">+91 9503519766 | INDIA</p>
+					</center>
+				</div>
 			</div>
-			-->
+
+			<div  id="about" class="inactivepage">
+				<div class="whitetiles"> 
+					<center>
+						<p style="text-align:center;"> Zilch </p>
+					</center>
+				</div>
+			</div>
 
 		</div>
 
 		<script>
 			var text = "";
 			var i;
-			for (i = 1; i < 8; i++) {
-			    text += "<div id=\"tile" +i+ "\" class=\"tiles\">  <img id=\"tileimg\" src=\"images/" +i+ ".jpg\" alt=\"tile\"/> </div>"
+			var abstract = ["abc", "def", "ijk", "lmn", "opq", "rst", "uvw", "xyz", "121231jninb32bi3b1i3b b23byb3i 1b2ib", "ererer"];
+			for (i = 1; i < 11; i++) {
+			    text += "<div id=\"tile"+i+"\" class=\"tiles\"> <img id=\"tileimg\" src=\"images/"+i+".jpg\" alt=\"tile\"/> <div class=\"middle\"> <div class=\"text\">"+abstract[i]+"</div> </div> </div>"
 			}
 			document.getElementById("maintiles").innerHTML = text;
 		</script>

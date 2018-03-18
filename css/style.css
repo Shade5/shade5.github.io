@@ -1,5 +1,36 @@
-.title {
+img {
+	position: relative; 
+	height: 300px;
+	width: auto;
+}
+
+.data{
+	padding: 10px;
+}
+
+body {
 	background-color: white;
+}
+
+.options {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: fantasy;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 16px;
+	text-decoration: none;
+	letter-spacing: 0.0555556em;
+	float: left;
+	text-align: center;
+}
+
+.title {
+	background-color: black;
 	padding: 20px;
 	font-family: fantasy;
 	line-height: 1.2em;
@@ -10,36 +41,20 @@
 	text-decoration: none;
 	letter-spacing: 0.0555556em;
 	float: left;
+	color: white;
 }
 
-img {
-	position: relative; 
-	height: 300px;
-	width: auto;
-}
-
-.data{
-	padding: 50px;
-}
-
-.options {
-	background-color: white;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	padding-left: 20px;
+p {
 	font-family: fantasy;
 	line-height: 1.2em;
-	text-transform: uppercase;
 	font-weight: 500;
 	font-style: normal;
-	font-size: 16px;
+	font-size: 20px;
 	text-decoration: none;
-	letter-spacing: 0.0555556em;
-	float: left;
 }
 
 .hbar {
-	background-color: white;
+	background-color: black;
 	padding-top: 45px;
 	padding-bottom: 38px;
 }
@@ -49,11 +64,50 @@ img {
 	background-color: black;
 	margin: 20px;
 	float: left;
-	padding: 2px
+	padding: 2px;
+	position: relative;
 }
 
-.text{
+.whitetiles {
+	background-color: white;
+  	width: 50%;
+  	height: 50%;
+  	padding: 30px;
+  	margin: 0 auto;
+}
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  padding: 16px 32px;
+}
+
+.middle {
+  transition: .5s ease;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.active {
+	background-color: white;
+	color: black;
+}
+
+.inactive {
+	background-color: black;
+	color: white;
+}
+
+.inactive:hover {
+	background-color: #a6a6a6;
+}
+
+.inactivepage {
 	display: none;
-    position:absolute;
-    top:0px;
 }
