@@ -1,19 +1,19 @@
 $( function() {
 
 	$('.tiles').on('mouseover', function() {
-		$( this ).find("img").animate({
+		$( this ).find("img").stop().animate({
 			opacity:0.7,
 			},
 			400);
-		$( this ).find(".middle").fadeIn(400);
+		$( this ).find(".middle").stop().fadeIn(400);
 	});
 
 	$('.tiles').on('mouseout', function() {
-		$( this ).find("img").animate({
+		$( this ).find("img").stop().animate({
 			opacity:1
 			},
 			400);
-		$( this ).find(".middle").fadeOut(400);
+		$( this ).find(".middle").stop().fadeOut(400);
 	});
 
 	$('.options').on('click', function() {
