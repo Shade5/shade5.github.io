@@ -48,4 +48,5 @@ $( function() {
 		});
 		$details.slideDown('400');
 	});
+
 });
