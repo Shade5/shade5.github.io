@@ -1,6 +1,6 @@
 $( function() {
 
-	$('.projecttiles').on('mouseover', function() {
+	$('.projecttiles').on('mouseover', function() {z
 	});
 
 });
