@@ -3,10 +3,31 @@ img {
 	height: 300px;
 	width: auto;
 }
-#maintitle a{
-    text-decoration: none;
-    color: white
+
+#topbar
+{
+	background-color: black;
+	height: 80px;
+	width: 100vw;
+	padding: 0 10px;
+	width: 100vw;
+	z-index: 2;
 }
+
+.maintitle {
+	background-color: black;
+	font-family: fantasy;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-style: normal;
+	font-size: 36px;
+	letter-spacing: 0.0555556em;
+}
+
+.maintitle a{
+	color: white;
+}
+
 
 .data{
 	padding: 10px;
@@ -17,20 +38,32 @@ body {
 }
 
 .options {
-	padding-top: 32px;
-	padding-bottom: 32px;
-	padding-left: 20px;
-	padding-right: 20px;
 	font-family: fantasy;
 	line-height: 1.2em;
 	text-transform: uppercase;
 	font-weight: 500;
 	font-style: normal;
 	font-size: 16px;
-	text-decoration: none;
 	letter-spacing: 0.0555556em;
-	float: left;
 	text-align: center;
+}
+
+#topbar ul
+{
+	display: flex;
+}
+
+#topbar ul li
+{
+	list-style: none;
+}
+
+#topbar ul li a
+{
+	display: block;
+	line-height: 80px;
+	text-decoration: none;
+	padding: 0 20px;
 }
 
 .title {
@@ -85,7 +118,7 @@ p {
   	width: 50%;
   	height: 50%;
   	padding: 30px;
-  	margin: 0 auto;
+  	margin: 0 auto; 
 }
 
 .text {
@@ -127,4 +160,28 @@ p {
 #arrow {
 	display: none;
 }
+
+.witharrow
+{
+	padding-top: 30px;
+	padding-bottom: 10px;
+	height: 40px;
+	line-height: 20px;
+}
+
+
+.stuck {
+  position:fixed;
+  top:0;
+}
+
+
+
+
+
+
+
+
+
+
 

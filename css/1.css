@@ -5,3 +5,11 @@
     width: 50%;
     height: auto;
 }
+
+.bottom{
+	height: 100vh;
+}
+
+#two{
+	display: none;
+}

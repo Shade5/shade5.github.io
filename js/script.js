@@ -1,5 +1,9 @@
 $( function() {
 
+	var sticky = new Waypoint.Sticky({
+	  element: $('#topbar')[0]
+	})
+
 	$('.tiles').on('mouseover', function() {
 		$( this ).find("img").stop().animate({
 			opacity:0.7,
@@ -17,15 +21,17 @@ $( function() {
 	});
 
 	$('.options').on('click', function() {
-		$('#arrow').hide('400');
+		$('#arrow').hide('400', function() {
+			$('#arrowdiv').removeClass('witharrow');
+		});
 		var $current = $($(this).attr('data-optionsid'));
 		$( this ).siblings().each(function() {
-			$(this).removeClass('active')
-			$(this).addClass('inactive')
+			$(this).find('a').removeClass('active')
+			$(this).find('a').addClass('inactive')
 		});
 
-		$( this ).addClass('active')
-		$( this ).removeClass('inactive')
+		$( this ).find('a').addClass('active')
+		$( this ).find('a').removeClass('inactive')
 
 		var $sib = $($(this).attr('data-optionsid')).siblings()
 
@@ -38,6 +44,7 @@ $( function() {
 
 	$('.tiles').on('click', function() {
 		$('#maintiles').slideUp(500);
+		$('#arrowdiv').addClass('witharrow');
 		$('#arrow').show('400');
 		$details = $('#details');
 		projectid = $(this).attr('data-projectid');
