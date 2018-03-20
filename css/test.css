@@ -67,6 +67,16 @@
 	background-color: #a6a6a6;
 }
 
+
+.tiles{
+	margin: 25vw;
+}
+
+img{
+	width: 50vw;
+	margin: 20px;
+}
+
 .stuck {
   position:fixed;
   top:0;

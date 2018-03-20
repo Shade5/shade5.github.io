@@ -1,10 +1,14 @@
 $( function() {
 
+	var sticky = new Waypoint.Sticky({
+	  element: $('#topbar')[0]
+	})
+
 	var waypoint = new Waypoint({
-	  element: $('#one'),
+	  element: $('.projecttiles'),
 	  handler: function() {
-	    $('#two').show(1000);
+	    alert('Basic waypoint triggered');
 	  }
-	},{offset: "-200px" });
+	})
 
 });

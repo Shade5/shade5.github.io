@@ -1,15 +1,9 @@
-.projectimage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: auto;
+.projecttiles{
+	margin: 25vw;
 }
 
-.bottom{
-	height: 100vh;
-}
-
-#two{
-	display: none;
+.projecttiles img{
+	width: 50vw;
+	height: auto;
+	margin: 20px;
 }
