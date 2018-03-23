@@ -1,0 +1,14 @@
+.projecttiles{
+	margin: 30px auto;
+	text-align: center;
+}
+
+.projecttiles img{
+	width: 50vw;
+	height: auto;
+}
+
+#interactive{
+	height: 80vh;
+	width: 80vw;
+}
