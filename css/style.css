@@ -14,9 +14,16 @@ img {
 	z-index: 2;
 }
 
+@font-face{
+	font-family: Bluefish Black Demo;
+	src: url('Bluefish_Black_Demo.otf');
+	font-family: Maniac;
+	src: url('Maniac.ttf');
+	
+}
 .maintitle {
 	background-color: black;
-	font-family: fantasy;
+	font-family: Bluefish Black Demo;
 	text-transform: uppercase;
 	font-weight: 900;
 	font-style: normal;
@@ -38,7 +45,7 @@ body {
 }
 
 .options {
-	font-family: fantasy;
+	font-family: Bluefish Black Demo;
 	line-height: 1.2em;
 	text-transform: uppercase;
 	font-weight: 500;

@@ -1,4 +1,6 @@
 $( function() {
+	
+	$(this).scrollTop(0);
 
 	var sticky = new Waypoint.Sticky({
 	  element: $('#topbar')[0]
@@ -37,7 +39,11 @@ $( function() {
 
 		$sib.each(function() {
 			$(this).slideUp(500, function(){
-				$current.slideDown(500);
+				$current.slideDown(500, function(){
+						$('html, body').stop().animate({
+				        scrollTop: 0},
+				        'fast');
+				});
 			});
 		});
 	});
@@ -53,7 +59,9 @@ $( function() {
 		}).fail(function() {
 			$details.html("Failed to fetch data");
 		});
-		$details.slideDown('400');
+		$details.slideDown('400',function(){
+			Waypoint.refreshAll()
+		});
 	});
 
 });
