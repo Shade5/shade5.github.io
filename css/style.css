@@ -157,6 +157,10 @@ p {
 	display: none;
 }
 
+.invisiblepage {
+	opacity: 0;
+}
+
 #arrow {
 	display: none;
 }

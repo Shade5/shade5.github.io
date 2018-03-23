@@ -4,11 +4,15 @@ $( function() {
 	  element: $('#topbar')[0]
 	})
 
-	var waypoint = new Waypoint({
-	  element: $('.projecttiles'),
-	  handler: function() {
-	    alert('Basic waypoint triggered');
-	  }
-	})
+	$('.invisiblepage').waypoint(function(direction) {
+		console.log(this.element);
+		$(this.element).animate({
+				opacity:1,
+				},
+				1000);
+		$(this.element).removeClass('invisiblepage');
+	},{
+	  offset:'80%'
+	});
 
 });

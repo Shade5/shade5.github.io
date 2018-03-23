@@ -6,36 +6,45 @@
 		</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/test.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script  src="js/jquery.waypoints.min.js" ></script>
 		<script  src="js/sticky.min.js" ></script>
-		<script  src="js/test.js" ></script>
+		<script  src="js/script.js" ></script>
 	</head>
 	 
 	<body>
 		<div id=topbar>
 			<ul>
-				<li class="maintitle"><a href="#">MACANATIONS</a></li>
-				<li class="options"><a href="#" class= "active">
-					<h2> work </h2>
-					<h2 id=arrow > &#x25C0 </h2>
+				<li class="maintitle"><a href="index.html">MACANATIONS</a></li>
+				<li class="options" data-optionsid="#maintiles" ><a href="#" class= "active">
+					<div id="arrowdiv">
+						<h2> work </h2>
+						<h2 id=arrow > &#x25C0 </h2>
+					</div>
 				</a></li>
-				<li class="options"><a href="#" class= "inactive">about</a></li>
-				<li class="options"><a href="#" class= "inactive">contact</a></li>
+				<li class="options" data-optionsid="#about"><a href="#" class= "inactive">about</a></li>
+				<li class="options" data-optionsid="#contact"><a href="#" class= "inactive">contact</a></li>
 			</ul>
 		</div>
 
-		<div class="tiles">
+	<link rel="stylesheet" type="text/css" href="css/1.css">
+
+		<div class="projecttiles">
+			<iframe id="interactive"
+			src="https://www.youtube.com/embed/digWQXf9Zj0">
+			</iframe>
+		</div>
+
+		<div class="projecttiles invisiblepage">
 			<img src="images/1/main.jpg">
 		</div>
 
-		<div class="tiles">
+		<div class="projecttiles invisiblepage">
 			<img src="images/2/main.jpg">
 		</div>
 
-		<div class=bottom>
-		</div>
+	<script  src="js/1.js" ></script>
 	</body>
   
 </html>
