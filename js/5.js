@@ -47,7 +47,7 @@ $( function() {
 		console.log($(this))
 		$iframe = $($(this)[0]).next();
 		$(this).slideUp('fast', function() {
-			$iframe.attr('src', 'https://www.youtube.com/embed/digWQXf9Zj0?autoplay=1');
+			$iframe.attr('src', 'index.html');
 			$iframe.slideDown('fast');
 		});
 	});

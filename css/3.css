@@ -1,5 +1,5 @@
 .projecttiles{
-	margin: 30px auto;
+	margin: 100px auto;
 	text-align: center;
 }
 
@@ -8,7 +8,45 @@
 	height: auto;
 }
 
-#interactive{
+.interactive{
 	height: 80vh;
 	width: 80vw;
+	display: none;
+	margin: auto;
+}
+
+.iframeholder{
+  opacity: 0.7;
+  display: block;
+  margin: auto;
+  height: 80vh;
+}
+
+.projecttilescontainer{
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+.middleimg{
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.play {
+  background-color: transparent;
+  width: 5vw;
+  height: auto;
+}
+
+.darken{
+  background-color: black;
+  display: inline-block;
 }

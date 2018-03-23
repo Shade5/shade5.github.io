@@ -44,6 +44,10 @@ $( function() {
 				        scrollTop: 0},
 				        'fast');
 				});
+				$('video').each(function()
+				{
+				    $(this)[0].pause();
+				});
 			});
 		});
 	});
