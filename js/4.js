@@ -43,7 +43,8 @@ $( function() {
 		}
 	});
 
-	$(".interactive").contents().find(".glove").on('click', function() {
-		$("iframe").attr('src', 'data/interactive.html');
+	$("iframe").contents().find(".glove").on('click', function() {
+		$("iframe").attr('src', 'index.html');
 	});
+
 });

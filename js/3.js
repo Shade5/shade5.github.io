@@ -44,7 +44,6 @@ $( function() {
 	});
 
 	$('.imgplaceholder').on('click', function() {
-		console.log($(this))
 		$iframe = $($(this)[0]).next();
 		$(this).slideUp('fast', function() {
 			$iframe.attr('src', 'https://www.youtube.com/embed/aUa4rkjqxWc?autoplay=1');

@@ -43,6 +43,7 @@ $( function() {
 						$('html, body').stop().animate({
 				        scrollTop: 0},
 				        'fast');
+				        Waypoint.refreshAll();
 				});
 				$('video').each(function()
 				{
@@ -64,7 +65,7 @@ $( function() {
 			$details.html("Failed to fetch data");
 		});
 		$details.slideDown('400',function(){
-			Waypoint.refreshAll()
+			Waypoint.refreshAll();
 		});
 	});
 
