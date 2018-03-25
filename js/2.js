@@ -43,7 +43,9 @@ $( function() {
 		}
 	});
 
-	$(".interactive").contents().find(".glove").on('click', function() {
+
+	$('iframe').iframeTracker(function(event) {
 		$("iframe").attr('src', 'data/interactive.html');
 	});
+
 });

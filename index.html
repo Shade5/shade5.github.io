@@ -8,8 +8,10 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/jquery.iframetracker.min.js"></script>
 		<script  src="js/jquery.waypoints.min.js" ></script>
 		<script  src="js/sticky.min.js" ></script>
+		<script src="https://d3js.org/d3.v5.min.js"></script>
 		<script  src="js/script.js" ></script>
 	</head>
 	 
@@ -59,7 +61,7 @@
 		<script>
 			var text = "";
 			var i;
-			var abstract = ["project1", "project2", "project3", "project4", "project5", "project5", "project6", "project7", "project8", "project9"];
+			var abstract = ["Shared World Map", "eLISA Simulation", "AeroD", "Website (gets meta)", "Ion Trap", "Molecular Dynamics"];
 			for (i = 1; i < 7; i++) {
 			    text += "<div id=\"tile"+i+"\" class=\"tiles\" data-projectid="+i+"> <img id=\"tileimg\" src=\"images/"+i+"/main.jpg\" alt=\"tile\"/> <div class=\"middle\"> <div class=\"text\">"+abstract[i-1]+"</div> </div> </div>"
 			}

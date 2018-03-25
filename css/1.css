@@ -1,5 +1,5 @@
 .projecttiles{
-	margin: 100px auto;
+	margin: 20vh 15vw;
 	text-align: center;
 }
 
@@ -28,6 +28,10 @@
     text-align: center;
 }
 
+p {
+  margin: auto 15vw;
+}
+
 .middleimg{
   transition: .5s ease;
   opacity: 1;
@@ -49,5 +53,34 @@
 .darken{
 	background-color: black;
 	display: inline-block;
+}
+
+.projecttitle {
+  margin: 40px 350px;
+  text-align: center;
+  font-family: Bluefish Black Demo;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 30px;
+  letter-spacing: 0.0555556em;
+}
+
+.imgplaceholder{
+  padding-bottom: 10px;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.righttext{
+  color: red;
+  vertical-align: middle;
+  height: 500px;
 }
 

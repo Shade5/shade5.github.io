@@ -43,8 +43,16 @@ $( function() {
 		}
 	});
 
-	$("iframe").contents().find(".glove").on('click', function() {
+	$('iframe').iframeTracker(function(event) {
 		$("iframe").attr('src', 'index.html');
+	});
+
+	$("iframe").contents().find('iframe').iframeTracker(function(event) {
+		$("iframe").contents().find('iframe').attr('src', 'index.html');
+	});
+
+	$("iframe").contents().find('iframe').contents().find('iframe').iframeTracker(function(event) {
+		$("iframe").contents().find('iframe').contents().find('iframe').attr('src', 'index.html');
 	});
 
 });
