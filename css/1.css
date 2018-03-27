@@ -1,5 +1,5 @@
 .projecttiles{
-	margin: 20vh 15vw;
+	margin: 20vh 10vw;
 	text-align: center;
 }
 
@@ -79,8 +79,19 @@ p {
 }
 
 .righttext{
-  color: red;
+  display: table-cell;
   vertical-align: middle;
-  height: 500px;
+  text-align: left;
+  padding: 100px;
+  font-family: Bluefish Black Demo;
+  font-size: 30px;
 }
 
+.lefttext{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  padding: 100px;
+  font-family: Bluefish Black Demo;
+  font-size: 30px;
+}

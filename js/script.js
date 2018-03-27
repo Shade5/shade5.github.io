@@ -51,6 +51,9 @@ $( function() {
 				});
 			});
 		});
+		$("iframe").each( function(){
+			$(this).attr('src', 'data/interactiveplaceholder.html');
+		})
 	});
 
 	$('.tiles').on('click', function() {

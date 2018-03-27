@@ -44,7 +44,7 @@ $( function() {
 	});
 
 
-	$('iframe').iframeTracker(function(event) {
+	$('iframe').iframeTracker(function() {
 		$("iframe").attr('src', 'data/interactive.html');
 	});
 

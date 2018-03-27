@@ -23,29 +23,79 @@
 	</div>
 
 	<div class="projecttiles invisiblepage">
-		<img class="left" src="images/1/as1.png">
-		<div class="righttext"> Using geometry based computer vision, the positions of Aruco markers were calculated from monocular cameras </div>
-		<br style="clear: both;" />
+		<table>
+		  <tr>
+		    <th><img class="left" src="images/1/as1.png"></th>
+		    <th class="righttext"> 
+		    	Using geometry based computer vision, the positions of Aruco markers were calculated from monocular cameras
+				<br style="clear: both;" />
+			</th> 
+		  </tr>
+		</table>
 	</div>
 
 	<div class="projecttiles invisiblepage">
-		<img src="images/1/sam1.png">
+		<table>
+		  <tr>
+		    <th class="lefttext">
+		    	Aruco markers were attached the robots for pose estimation
+				<br style="clear: both;" />
+			</th>
+		    <th><img class="right" src="images/1/sam1.png"></th>
+		  </tr>
+		</table>
 	</div>
 
 	<div class="projecttiles invisiblepage">
-		<img src="images/1/sha.png">
+		<table>
+		  <tr>
+		    <th><img class="left" src="images/1/sha.png"></th>
+		    <th class="righttext"> 
+		    	Information from multiple cameras were sent over the network to a server to build a Shared Map of the robot environment. No prior information about the location of the cameras or the robots is needed
+				<br style="clear: both;" />
+			</th> 
+		  </tr>
+		</table>
 	</div>
 
 	<div class="projecttiles invisiblepage">
-		<img src="images/1/as1.png">
+		<table>
+		  <tr>
+		    <th class="lefttext">
+		    	Odometry readings and camera information were fused using Rao-Backwellized  particle filter for extremely accurate estimates. This SLAM algorithm increases accuracy the longer the system runs
+				<br style="clear: both;" />
+			</th>
+		    <th><img class="right" src="images/1/as1.png"></th>
+		  </tr>
+		</table>
 	</div>
 
 	<div class="projecttiles invisiblepage">
-		<img src="images/1/axis.png">
+		<table>
+		  <tr>
+		    <th><img class="left" src="images/1/axis.png"></th>
+		    <th class="righttext"> 
+		    	Here the SLAM algorithm was used to locate the walls, only using Cozmo’s camera and movement
+				<br style="clear: both;" />
+			</th> 
+		  </tr>
+		</table>
 	</div>
 
 	<div class="projecttiles invisiblepage">
-		<img src="images/1/par.png">
+		<table>
+		  <tr>
+		    <th class="lefttext">
+		    	Here’s a comparison of the ground truth and the estimated map. Although the Server robot cannot see the walls, it shares its eyes with the client robots and can thus see beyond its normal sight
+				<br style="clear: both;" />
+			</th>
+		    <th><img class="right" src="images/1/par.png"></th>
+		  </tr>
+		</table>
+	</div>
+
+	<div class="projecttiles">
+		<p>More details are described in this <a href="pdf/sharedworld.pdf">report</a> </p>
 	</div>
 
 <script  src="js/1.js" ></script>
