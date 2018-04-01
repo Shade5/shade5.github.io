@@ -1,6 +1,6 @@
 .projecttiles{
-	margin: 100px auto;
-	text-align: center;
+  margin: 20vh 5vw;
+  text-align: center;
 }
 
 .projecttiles img{
@@ -27,6 +27,12 @@
     position: relative;
     margin: auto;
     text-align: center;
+    font-family: Montserrat;
+}
+
+p {
+  margin: auto 10vw;
+  padding: 10px;
 }
 
 .middleimg{
@@ -50,4 +56,45 @@
 .darken{
   background-color: black;
   display: inline-block;
+}
+
+.projecttitle {
+  margin: 40px 350px;
+  text-align: center;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: bold;
+  font-size: 45px;
+  letter-spacing: 0.0555556em;
+}
+
+.imgplaceholder{
+  padding-bottom: 10px;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.righttext{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 50px;
+  font-family: Montserrat;
+  font-size: 40px;
+}
+
+.lefttext{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 50px;
+  font-family: Montserrat;
+  font-size: 40px;
 }

@@ -19,13 +19,15 @@ img {
 	src: url('Bluefish_Black_Demo.otf');
 	font-family: Maniac;
 	src: url('Maniac.ttf');
+	font-family: Montserrat;
+	src: url('Montserrat-Light.otf');
 	
 }
 .maintitle {
 	background-color: black;
-	font-family: Bluefish Black Demo;
+	font-family: Montserrat;
 	text-transform: uppercase;
-	font-weight: 900;
+	font-weight: 1300;
 	font-style: normal;
 	font-size: 36px;
 	letter-spacing: 0.0555556em;
@@ -45,7 +47,7 @@ body {
 }
 
 .options {
-	font-family: Bluefish Black Demo;
+	font-family: Montserrat;
 	line-height: 1.2em;
 	text-transform: uppercase;
 	font-weight: 500;
@@ -88,8 +90,8 @@ body {
 	color: white;
 }
 
-p {
-	font-family: fantasy;
+.whitetiles p {
+	font-family: Montserrat;
 	line-height: 1.2em;
 	font-weight: 500;
 	font-style: normal;
@@ -103,6 +105,9 @@ p {
 	padding-bottom: 38px;
 }
 
+b {
+	font-weight: 900;
+}
 .tiles {
 	display: flex;
 	background-color: black;
@@ -110,6 +115,7 @@ p {
 	float: left;
 	padding: 2px;
 	position: relative;
+	font-family: Montserrat;
 }
 
 .whitetiles {
@@ -170,6 +176,7 @@ p {
 
 #arrow {
 	display: none;
+	font-size: 25px;
 }
 
 .witharrow
