@@ -120,10 +120,11 @@ b {
 
 .whitetiles {
 	background-color: white;
-  	width: 50%;
+  	width: 70%;
   	height: 50%;
   	padding: 30px;
   	margin: 0 auto;
+  	text-align: center;
 }
 
 .details {
@@ -193,6 +194,30 @@ b {
   top:0;
 }
 
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+#about p {
+	text-align: left;
+	line-height: 1.6;
+	font-size: 18px;
+	padding-top: 30px;
+}
+
+#contact p {
+	font-size: 18px;
+	padding-top: 30px;
+}
+
+#cvinteractive{
+	height: 100vh;
+	width: 60vw;
+	display: inline-block;
+	margin: auto;
+	border: 3px solid black;
+}
 
 
 

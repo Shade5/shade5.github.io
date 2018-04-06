@@ -28,6 +28,7 @@
 				</a></li>
 				<li class="options" data-optionsid="#about"><a href="#" class= "inactive">about</a></li>
 				<li class="options" data-optionsid="#contact"><a href="#" class= "inactive">contact</a></li>
+				<li class="options" data-optionsid="#CV"><a href="#" class= "inactive">CV</a></li>
 			</ul>
 		</div>
 		
@@ -50,9 +51,22 @@
 
 			<div  id="about" class="inactivepage">
 				<div class="whitetiles"> 
-					<center>
-						<p style="text-align:center;"> Zilch </p>
-					</center>
+						<img src="images/fez.jpg" style="float:right;">
+						<p> 
+						Self-professed geek, avid reader and gamer. Passionate about vison, robotics, learning and physics. <br/>
+						Pursuing a dual degree in Computer Science and Physics at BITS Goa, India.<br/>
+						Currently working at Microsoft's Big Data Team, Bangalore.<br/>
+						Joining Carnegie Mellon University's Computer Vision program.<br/><br/>
+
+						Uses the picture on the left (FEZ) on all platforms.
+						</p>
+
+				</div>
+			</div>
+
+			<div id="CV" class="inactivepage">
+				<div class="whitetiles"> 
+					<iframe id="cvinteractive" src=""></iframe>
 				</div>
 			</div>
 
@@ -61,10 +75,12 @@
 		<script>
 			var text = "";
 			var i;
-			var abstract = ["Shared World Map", "eLISA Simulation", "AeroD", "Website (gets meta)", "Ion Trap", "Molecular Dynamics"];
+			var abstract = ["Shared World Map", "eLISA Simulation", "AeroD", "Molecular Dynamics", "Ion Trap", "Website (gets meta)"];
 			for (i = 1; i < 7; i++) {
 			    text += "<div id=\"tile"+i+"\" class=\"tiles\" data-projectid="+i+"> <img id=\"tileimg\" src=\"images/"+i+"/main.jpg\" alt=\"tile\"/> <div class=\"middle\"> <div class=\"text\">"+abstract[i-1]+"</div> </div> </div>"
 			}
+
+			text+= "<div id=\"tile"+i+"\" class=\"tiles\" > <img id=\"tileimg\" src=\"images/coming.jpg\" alt=\"tile\"/> <div class=\"middle\"> <div class=\"text\"> Coming Soon...</div> </div> </div>"
 			document.getElementById("maintiles").innerHTML = text;
 		</script>
 

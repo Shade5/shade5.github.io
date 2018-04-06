@@ -8,7 +8,7 @@
 	height: auto;
 }
 
-.interactive{
+#interactive{
 	height: 80vh;
 	width: 80vw;
 	display: none;
@@ -35,6 +35,7 @@
 .introduction{
   margin: auto 13vw;
   font-size: 25px;
+  font-size: 1.25vw;
   text-align: left;
   font-family: Montserrat;
   line-height: 1.6;
@@ -78,7 +79,8 @@
   text-transform: uppercase;
   font-weight: 900;
   font-style: bold;
-  font-size: 45px;
+  font-size: 40px;
+  font-size: 2vw;
   letter-spacing: 0.0555556em;
 }
 
@@ -88,6 +90,7 @@
   font-family: Montserrat;
   font-style: bold;
   font-size: 25px;
+  font-size: 1.25vw;
   letter-spacing: 0.0555556em;
 }
 
@@ -110,6 +113,7 @@
   padding: 50px;
   font-family: Montserrat;
   font-size: 40px;
+  font-size: 2vw;
   line-height: 1.3;
 }
 
@@ -120,5 +124,6 @@
   padding: 50px;
   font-family: Montserrat;
   font-size: 40px;
+  font-size: 2vw;
   line-height: 1.3;
 }

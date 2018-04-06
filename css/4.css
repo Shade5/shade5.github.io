@@ -11,16 +11,15 @@
 .interactive{
 	height: 80vh;
 	width: 80vw;
-	display: inline-block;
+	display: none;
 	margin: auto;
-	border: 3px solid black;
 }
 
 .iframeholder{
   opacity: 0.7;
   display: block;
   margin: auto;
-  height: 90vh;
+  height: 80vh;
 }
 
 .projecttilescontainer{
@@ -48,6 +47,7 @@
 }
 
 .darken{
-  background-color: black;
-  display: inline-block;
+	background-color: black;
+	display: inline-block;
 }
+

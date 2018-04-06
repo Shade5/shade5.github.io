@@ -24,7 +24,7 @@ $( function() {
 
 	},{
 	  offset: function() {
-		  return -this.element.offsetHeight*0.33;
+		  return -this.element.offsetHeight*0.6;
 		}
 	});
 

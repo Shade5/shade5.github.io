@@ -53,6 +53,7 @@ $( function() {
 		});
 		$("iframe").each( function(){
 			$(this).attr('src', 'data/interactiveplaceholder.html');
+			$("#cvinteractive").attr('src', 'https://drive.google.com/file/d/0B1yl-3Rq59Y0bFo0MVk1TEUyQVU/preview');
 		})
 	});
 
@@ -71,5 +72,4 @@ $( function() {
 			Waypoint.refreshAll();
 		});
 	});
-
 });

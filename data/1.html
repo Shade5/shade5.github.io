@@ -1,135 +1,134 @@
 <link rel="stylesheet" type="text/css" href="css/1.css">
 
-	<div class="projecttitle">
-		<h2>
-			Shared world map of a multi-robot system
-		</h2>
-	</div>
+    <div class="projecttitle">
+        <h2>
+            Shared world map of a multi-robot system
+        </h2>
+    </div>
 
-	<div class="projecttilescontainer">
-		<div class="imagemidw">
-			<div class="imgplaceholder">
-				<div class="darken">
-					<img class="iframeholder" src="images/1/main.jpg" style="cursor:pointer" />
-				</div>
-				<div class="middleimg">
-					<img class="play" src="images/play.png" style="cursor:pointer" />
-				</div>
-			</div>
-		</div>
-		<iframe class="interactive"
-		src="#">
-		</iframe>
+    <div class="projecttilescontainer">
+        <div class="imagemidw">
+            <div class="imgplaceholder">
+                <div class="darken">
+                    <img class="iframeholder" src="images/1/main.jpg" style="cursor:pointer" />
+                </div>
+                <div class="middleimg">
+                    <img class="play" src="images/play.png" style="cursor:pointer" />
+                </div>
+            </div>
+        </div>
+        <iframe id="interactive"
+        src="#">
+        </iframe>
 
-		<div class="introduction">
-				<ul class="detaillist">
-				  <li><b>Supervisor:</b> David S. Touretzky</li>
-				  <li><b>Role:</b> Research Intern</li>
-				  <li><b>Location:</b> Carnegie Mellon University</li>
-				  <li><b>Duration:</b> 6 months</li>
-				  <li><b>Tools:</b> Python, OpenCV, ROS, CozmoFSM, Cozmotools</li>
-				  <li><b>Keywords</b> Computer Vision, SLAM, Perception, Geometry, Robotics</li>
-				</ul>
-			<br/>
-			<p>
-				In this project, a shared map was built for a multi-robot system.  This client-server system automatically calculates transformation between different coordinate
-				frames.  Building the map includes:
-				<ul class="inlist">
-				  <li>Localizing the robot in 3D from a perched camera</li>
-				  <li>Particle filter for SLAM and to fuse information</li>
-				  <li>Shared map is built by the server and sent to all the clients</li>
-				</ul>  
-			</p>
-			<p>
-				The shared map allows the robots to interact with each other and share their eyes.
-				The video above shows a small application of the dynamic map built by Cozmo.
-				With no prior information about the walls, Cozmo is able to <b>SEE</b> them and cruise through to the target.
-			</p>
-		</div>
-	</div>
+        <div class="introduction">
+                <ul class="detaillist">
+                  <li><b>Supervisor:</b> David S. Touretzky</li>
+                  <li><b>Role:</b> Research Intern</li>
+                  <li><b>Location:</b> Carnegie Mellon University</li>
+                  <li><b>Duration:</b> 6 months</li>
+                  <li><b>Tools:</b> Python, OpenCV, ROS, CozmoFSM, Cozmotools</li>
+                  <li><b>Keywords:</b> Computer Vision, SLAM, Perception, Geometry, Robotics</li>
+                </ul>
+            <br/>
+            <p>
+                In this project, a shared map was built for a multi-robot system. This client-server system automatically calculates transformation between different coordinate frames.  Building the map includes:
+                <ul class="inlist">
+                  <li>Localizing the robot in 3D from a perched camera</li>
+                  <li>Particle filter for SLAM and to fuse information</li>
+                  <li>A Shared map is built by the server and sent to all the clients</li>
+                </ul>  
+            </p>
+            <p>
+                The shared map allows the robots to interact with each other and share their eyes.
+                The video above shows a small application of the dynamic map built by Cozmo.
+                With no prior information about the walls, Cozmo is able to <b>SEE</b> them and cruise through to the target.
+            </p>
+        </div>
+    </div>
 
-	<div class="projecttiles invisiblepage">
-		<table>
-		  <tr>
-		    <th><img class="left" src="images/1/as1.png"></th>
-		    <th class="righttext"> 
-		    	Using geometry based computer vision, the positions of Aruco markers were calculated from monocular cameras.
-				<br style="clear: both;" />
-			</th> 
-		  </tr>
-		</table>
-	</div>
+    <div class="projecttiles invisiblepage">
+        <table>
+          <tr>
+            <th><img class="left" src="images/1/as1.png"></th>
+            <th class="righttext"> 
+                Using geometry based computer vision, the positions of Aruco markers were calculated from monocular cameras.
+                <br style="clear: both;" />
+            </th> 
+          </tr>
+        </table>
+    </div>
 
-	<div class="projecttiles invisiblepage">
-		<table>
-		  <tr>
-		    <th class="lefttext">
-		    	Aruco markers were attached to the robots for pose estimation.
-				<br style="clear: both;" />
-			</th>
-		    <th><img class="right" src="images/1/axis.png"></th>
-		  </tr>
-		</table>
-	</div>
+    <div class="projecttiles invisiblepage">
+        <table>
+          <tr>
+            <th class="lefttext">
+                Aruco markers were attached to the robots for pose estimation.
+                <br style="clear: both;" />
+            </th>
+            <th><img class="right" src="images/1/axis.png"></th>
+          </tr>
+        </table>
+    </div>
 
-	<div class="projecttiles invisiblepage">
-		<table>
-		  <tr>
-		    <th><img class="left" src="images/1/sha.png"></th>
-		    <th class="righttext"> 
-		    	Information from multiple cameras were sent over the network to a server to build a Map of the robot environment.
-		    	<br/>
-		    	<br/>
-		    	No prior information about the location of the cameras or the robots is needed.
-				<br style="clear: both;" />
-			</th> 
-		  </tr>
-		</table>
-	</div>
+    <div class="projecttiles invisiblepage">
+        <table>
+          <tr>
+            <th><img class="left" src="images/1/sha.png"></th>
+            <th class="righttext"> 
+                Information from multiple cameras was sent over the network to a server to build a Map of the robot environment.
+                <br/>
+                <br/>
+                No prior information about the location of the cameras or the robots is needed.
+                <br style="clear: both;" />
+            </th> 
+          </tr>
+        </table>
+    </div>
 
-	<div class="projecttiles invisiblepage">
-		<table>
-		  <tr>
-		    <th class="lefttext">
-		    	Odometry readings and camera information were fused using a Rao-Backwellized particle filter for extremely accurate estimates.
-		    	<br/>
-		    	<br/>
-		    	This SLAM algorithm increases accuracy the longer the system runs.
-				<br style="clear: both;" />
-			</th>
-		    <th><img class="right" src="images/1/par.png"></th>
-		  </tr>
-		</table>
-	</div>
+    <div class="projecttiles invisiblepage">
+        <table>
+          <tr>
+            <th class="lefttext">
+                Odometry readings and camera information were fused using a Rao-Backwellized particle filter for extremely accurate estimates.
+                <br/>
+                <br/>
+                This SLAM algorithm increases accuracy the longer the system runs.
+                <br style="clear: both;" />
+            </th>
+            <th><img class="right" src="images/1/par.png"></th>
+          </tr>
+        </table>
+    </div>
 
-	<div class="projecttiles invisiblepage">
-		<table>
-		  <tr>
-		    <th><img class="left" src="images/1/sam1.png"></th>
-		    <th class="righttext"> 
-		    	Here the SLAM algorithm was used to locate the walls, only using Cozmo’s camera and movement.
-				<br style="clear: both;" />
-			</th> 
-		  </tr>
-		</table>
-	</div>
+    <div class="projecttiles invisiblepage">
+        <table>
+          <tr>
+            <th><img class="left" src="images/1/sam1.png"></th>
+            <th class="righttext"> 
+                Here the SLAM algorithm was used to locate the walls, only using Cozmo’s camera and movement.
+                <br style="clear: both;" />
+            </th> 
+          </tr>
+        </table>
+    </div>
 
-	<div class="projecttiles invisiblepage">
-		<table>
-		  <tr>
-		    <th class="lefttext">
-		    	Ground truth vs Estimated map.
-		    	Although the Server robot cannot see the walls, it shares its eyes with the client robots and can thus see beyond its normal sight.
-				<br style="clear: both;" />
-			</th>
-		    <th><img class="right" src="images/1/fin.png"></th>
-		  </tr>
-		</table>
-	</div>
+    <div class="projecttiles invisiblepage">
+        <table>
+          <tr>
+            <th class="lefttext">
+                Ground truth vs Estimated map.
+                Although the Server robot cannot see the walls, it shares its eyes with the client robots and can thus see beyond its normal sight.
+                <br style="clear: both;" />
+            </th>
+            <th><img class="right" src="images/1/fin.png"></th>
+          </tr>
+        </table>
+    </div>
 
-	<div class="projecttiles">
-		<p>More details are described in this <a href="pdf/sharedworld.pdf">report</a> </p>
-	</div>
+    <div class="projecttiles">
+        <p>More details are described in this <a href="pdf/sharedworld.pdf">report</a> </p>
+    </div>
 
 <script  src="js/1.js" ></script>
 </body>

@@ -24,7 +24,7 @@ $( function() {
 
 	},{
 	  offset: function() {
-		  return -this.element.offsetHeight*0.33;
+		  return -this.element.offsetHeight*0.6;
 		}
 	});
 
@@ -44,7 +44,7 @@ $( function() {
 	});
 
 	$('.imgplaceholder').on('click', function() {
-		$iframe = $($(this)[0]).next();
+		$iframe = $("#interactive");
 		$(this).slideUp('fast', function() {
 			$iframe.attr('src', 'https://www.youtube.com/embed/digWQXf9Zj0?autoplay=1');
 			$iframe.slideDown('fast');
