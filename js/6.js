@@ -24,7 +24,7 @@ $( function() {
 
 	},{
 	  offset: function() {
-		  return -this.element.offsetHeight*0.33;
+		  return -this.element.offsetHeight*0.6;
 		}
 	});
 
@@ -43,16 +43,11 @@ $( function() {
 		}
 	});
 
-	$('iframe').iframeTracker(function(event) {
-		$("iframe").attr('src', 'index.html');
+	$('.imgplaceholder').on('click', function() {
+		$iframe = $("#interactive");
+		$(this).slideUp('fast', function() {
+			$iframe.attr('src', 'https://www.youtube.com/embed/digWQXf9Zj0?autoplay=1');
+			$iframe.slideDown('fast');
+		});
 	});
-
-	$("iframe").contents().find('iframe').iframeTracker(function(event) {
-		$("iframe").contents().find('iframe').attr('src', 'index.html');
-	});
-
-	$("iframe").contents().find('iframe').contents().find('iframe').iframeTracker(function(event) {
-		$("iframe").contents().find('iframe').contents().find('iframe').attr('src', 'index.html');
-	});
-
 });

@@ -219,6 +219,15 @@ sup {
 	border: 3px solid black;
 }
 
+.whitetiles ul {
+	text-align: left;
+	list-style: disc;
+	padding-left: 3vw;
+	font-size: 18px;
+	font-family: Montserrat;
+	line-height: 1.8em;
+}
+
 
 
 

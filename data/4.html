@@ -1,15 +1,97 @@
 <link rel="stylesheet" type="text/css" href="css/4.css">
 
-	<div class="projecttiles invisiblepage">
-		<img src="images/4/4.jpg">
-	</div>
+    <div class="projecttitle">
+        <h2>
+            Molecular Dynamics
+        </h2>
+    </div>
 
-	<div class="projecttiles invisiblepage">
-		<img src="images/4/300000.png">
-	</div>
-	<div class="projecttiles invisiblepage">
-		<img src="images/4/cnn.png">
-	</div>
+    <div class="projecttilescontainer">
+        <img class="ingif" src="images/4/dyn.gif">
+
+        <div class="introduction">
+                <ul class="detaillist">
+                  <li><b>Supervisor:</b> Toby Joseph</li>
+                  <li><b>Role:</b> Study Project Student</li>
+                  <li><b>Location:</b> BITS Goa</li>
+                  <li><b>Duration:</b> 6 months</li>
+                  <li><b>Tools:</b> Python, FORTRAN, In-house cluster</li>
+                  <li><b>Keywords:</b> Molecular Dynamics, Phase transitions, Computational physics</li>
+                </ul>
+            <br/>
+            <p>
+                In this project, a shared map was built for a multi-robot system. This client-server system automatically calculates transformation between different coordinate frames.  Building the map includes:
+                <ul class="inlist">
+                  <li>Localizing the robot in 3D from a perched camera</li>
+                  <li>Particle filter for SLAM and to fuse information</li>
+                  <li>A Shared map is built by the server and sent to all the clients</li>
+                </ul>  
+            </p>
+            <p>
+                The shared map allows the robots to interact with each other and share their eyes.
+                The video above shows a small application of the dynamic map built by Cozmo.
+                With no prior information about the walls, Cozmo is able to <b>SEE</b> them and cruise through to the target.
+            </p>
+        </div>
+    </div>
+
+    <div class="projecttiles invisiblepage">
+        <table>
+          <tr>
+            <th><img class="left" src="images/4/grid.png"></th>
+            <th class="righttext"> 
+                Using geometry based computer vision, the positions of Aruco markers were calculated from monocular cameras.
+                <br style="clear: both;" />
+            </th> 
+          </tr>
+        </table>
+    </div>
+
+    <div class="projecttiles invisiblepage">
+        <table>
+          <tr>
+            <th class="lefttext">
+                Aruco markers were attached to the robots for pose estimation.
+                <br style="clear: both;" />
+            </th>
+            <th><img class="right" src="images/4/pot.png"></th>
+          </tr>
+        </table>
+    </div>
+
+    <div class="projecttiles invisiblepage">
+        <table>
+          <tr>
+            <th><img class="left" src="images/4/300000.png"></th>
+            <th class="righttext"> 
+                Information from multiple cameras was sent over the network to a server to build a Map of the robot environment.
+                <br/>
+                <br/>
+                No prior information about the location of the cameras or the robots is needed.
+                <br style="clear: both;" />
+            </th> 
+          </tr>
+        </table>
+    </div>
+
+    <div class="projecttiles invisiblepage">
+        <table>
+          <tr>
+            <th class="lefttext">
+                Odometry readings and camera information were fused using a Rao-Backwellized particle filter for extremely accurate estimates.
+                <br/>
+                <br/>
+                This SLAM algorithm increases accuracy the longer the system runs.
+                <br style="clear: both;" />
+            </th>
+            <th><img class="right" src="images/4/cnn.png"></th>
+          </tr>
+        </table>
+    </div>
+
+    <div class="projecttiles">
+        <p>More details are described in this <a href="pdf/monte.pdf">report</a> </p>
+    </div>
 
 <script  src="js/4.js" ></script>
 </body>
