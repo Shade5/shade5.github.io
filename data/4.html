@@ -20,17 +20,20 @@
                 </ul>
             <br/>
             <p>
-                In this project, a shared map was built for a multi-robot system. This client-server system automatically calculates transformation between different coordinate frames.  Building the map includes:
+                Studying the interaction of particles at the solid-liquid interface has been a difficult 
+                process as the R-Y Theory that describes this process requires the two-point correlation
+				function which is extremely difficult to obtain via experiments. As an alternative, it can
+				be calculated using computational techniques like Metropolis simulations. <br/>
+				In this project a system of particles under the influence of a substrate potential is simulated as follows:
                 <ul class="inlist">
-                  <li>Localizing the robot in 3D from a perched camera</li>
-                  <li>Particle filter for SLAM and to fuse information</li>
-                  <li>A Shared map is built by the server and sent to all the clients</li>
+                  <li>Creating substrate potential mesh</li>
+                  <li>A random distribution of particles, sampled using Metropolis simulations</li>
+                  <li>Rerunning the simulation for various temperatures to obtain solid-liquid interface data</li>
+                  <li>Two-point correlation function is plugged into R-Y Theory</li>
                 </ul>  
             </p>
             <p>
-                The shared map allows the robots to interact with each other and share their eyes.
-                The video above shows a small application of the dynamic map built by Cozmo.
-                With no prior information about the walls, Cozmo is able to <b>SEE</b> them and cruise through to the target.
+                The GIF above shows the distribution of particles at different temperatures. Chaos dies with temperature loss.
             </p>
         </div>
     </div>
@@ -40,7 +43,7 @@
           <tr>
             <th><img class="left" src="images/4/grid.png"></th>
             <th class="righttext"> 
-                Using geometry based computer vision, the positions of Aruco markers were calculated from monocular cameras.
+                The substrate particles were placed in an ordered grid, fixed at their initial location. The liquid particles were free to move.
                 <br style="clear: both;" />
             </th> 
           </tr>
@@ -51,7 +54,7 @@
         <table>
           <tr>
             <th class="lefttext">
-                Aruco markers were attached to the robots for pose estimation.
+                The substrate potential was precalculated as it will always remain constant.
                 <br style="clear: both;" />
             </th>
             <th><img class="right" src="images/4/pot.png"></th>
@@ -64,10 +67,7 @@
           <tr>
             <th><img class="left" src="images/4/300000.png"></th>
             <th class="righttext"> 
-                Information from multiple cameras was sent over the network to a server to build a Map of the robot environment.
-                <br/>
-                <br/>
-                No prior information about the location of the cameras or the robots is needed.
+                At low temperatures, the particles are likely to be present at the center of four substrate particles, the most stable location.
                 <br style="clear: both;" />
             </th> 
           </tr>
@@ -78,10 +78,7 @@
         <table>
           <tr>
             <th class="lefttext">
-                Odometry readings and camera information were fused using a Rao-Backwellized particle filter for extremely accurate estimates.
-                <br/>
-                <br/>
-                This SLAM algorithm increases accuracy the longer the system runs.
+                 The Correlation Function for different values of temperature are plotted here. Particles are evenly distributed at high temperatures.
                 <br style="clear: both;" />
             </th>
             <th><img class="right" src="images/4/cnn.png"></th>

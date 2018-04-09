@@ -2,7 +2,7 @@
 
     <div class="projecttitle">
         <h2>
-            Computer Tomography
+            Cone-Beam Computer Tomography
         </h2>
     </div>
 
@@ -23,17 +23,18 @@
                 </ul>
             <br/>
             <p>
-                In this project, a shared map was built for a multi-robot system. This client-server system automatically calculates transformation between different coordinate frames.  Building the map includes:
+                Computerized Tomography (CT) is a radiographic method for volumetric details in three dimensions. 
+                CT has been used almost entirely for medical purposes but over the past two decades, it has been used in non-destructive testing of industrial materials.
+                The steps for generating a 3D model of an object are:
                 <ul class="inlist">
-                  <li>Localizing the robot in 3D from a perched camera</li>
-                  <li>Particle filter for SLAM and to fuse information</li>
-                  <li>A Shared map is built by the server and sent to all the clients</li>
+                  <li>Scanning the object from specific angles with an X-ray</li>
+                  <li>Reconstruction of layers using tomography</li>
+                  <li>Filtering to remove reconstruction artifacts</li>
+                  <li>Stacking layers to build the 3D structure</li>
                 </ul>  
             </p>
             <p>
-                The shared map allows the robots to interact with each other and share their eyes.
-                The video above shows a small application of the dynamic map built by Cozmo.
-                With no prior information about the walls, Cozmo is able to <b>SEE</b> them and cruise through to the target.
+                The video above shows the reconstruction of a skull using the cone-beam reconstructor.
             </p>
         </div>
     </div>
@@ -43,7 +44,7 @@
           <tr>
             <th><img class="left" src="images/6/theo.png"></th>
             <th class="righttext"> 
-                Using geometry based computer vision, the positions of Aruco markers were calculated from monocular cameras.
+                X-ray intensity is measured at various angles to probe the object.
                 <br style="clear: both;" />
             </th> 
           </tr>
@@ -54,7 +55,7 @@
         <table>
           <tr>
             <th class="lefttext">
-                Aruco markers were attached to the robots for pose estimation.
+                The sinograms created by the scans are used for reconstruction. This is the sinogram of a circle.
                 <br style="clear: both;" />
             </th>
             <th><img class="right" src="images/6/cir.png"></th>
@@ -67,10 +68,7 @@
           <tr>
             <th><img class="left" src="images/6/ell.png"></th>
             <th class="righttext"> 
-                Information from multiple cameras was sent over the network to a server to build a Map of the robot environment.
-                <br/>
-                <br/>
-                No prior information about the location of the cameras or the robots is needed.
+                Sinogram of an ellipse.
                 <br style="clear: both;" />
             </th> 
           </tr>
@@ -81,10 +79,7 @@
         <table>
           <tr>
             <th class="lefttext">
-                Odometry readings and camera information were fused using a Rao-Backwellized particle filter for extremely accurate estimates.
-                <br/>
-                <br/>
-                This SLAM algorithm increases accuracy the longer the system runs.
+                Sinogram of a circle offset from the center.
                 <br style="clear: both;" />
             </th>
             <th><img class="right" src="images/6/off.png"></th>
@@ -97,7 +92,7 @@
           <tr>
             <th><img class="left" src="images/6/cross.gif"></th>
             <th class="righttext"> 
-                Here the SLAM algorithm was used to locate the walls, only using Cozmo’s camera and movement.
+                Each layer is reconstructed independently of each other.
                 <br style="clear: both;" />
             </th> 
           </tr>
@@ -108,8 +103,7 @@
         <table>
           <tr>
             <th class="lefttext">
-                Ground truth vs Estimated map.
-                Although the Server robot cannot see the walls, it shares its eyes with the client robots and can thus see beyond its normal sight.
+                The final code was integrated into a GUI to simplify the reconstruction process.
                 <br style="clear: both;" />
             </th>
             <th><img class="right" src="images/6/gu2.jpg"></th>

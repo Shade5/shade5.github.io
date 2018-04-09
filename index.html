@@ -14,6 +14,15 @@
 		<script src="https://d3js.org/d3.v5.min.js"></script>
 		<script  src="js/script.js" ></script>
 	</head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117186377-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-117186377-1');
+	</script>
 	 
 	<body>
 
@@ -61,12 +70,13 @@
 						<br/>
 						Following is a list of games I think everybody should try.
 							<ul>
-								<li>Bioshock Infinite</li>
-								<li>FEZ</li>
-								<li>Okami HD</li>
-								<li>Ori and the Blind Forest</li>
-								<li>Pony Island</li>
-								<li>Portal 2</li>
+								<li><a class="nostyle" href="http://store.steampowered.com/app/8870/BioShock_Infinite/" target="_blank">Bioshock Infinite</a></li>
+								<li><a class="nostyle" href="http://store.steampowered.com/app/224760/FEZ/" target="_blank">FEZ</a></li>
+								<li><a class="nostyle" href="http://store.steampowered.com/app/587620/OKAMI_HD/" target="_blank">Okami HD</a></li>
+								<li><a class="nostyle" href="http://store.steampowered.com/app/261570/Ori_and_the_Blind_Forest/" target="_blank">Ori and the Blind Forest</a></li>
+								<li><a class="nostyle" href="http://store.steampowered.com/app/405640/Pony_Island/" target="_blank">Pony Island</a></li>
+								<li><a class="nostyle" href="http://store.steampowered.com/app/620/Portal_2/" target="_blank">Portal 2</a></li>
+								<li><a class="nostyle" href="https://www.zelda.com/breath-of-the-wild/" target="_blank">Zelda: Breath of the Wild</a></li>
 							</ul>
 						</p>
 
@@ -89,7 +99,7 @@
 			    text += "<div id=\"tile"+i+"\" class=\"tiles\" data-projectid="+i+"> <img id=\"tileimg\" src=\"images/"+i+"/main.jpg\" alt=\"tile\"/> <div class=\"middle\"> <div class=\"text\">"+abstract[i-1]+"</div> </div> </div>"
 			}
 
-			text+= "<div id=\"tile"+i+"\" class=\"tiles\" > <img id=\"tileimg\" src=\"images/coming.jpg\" alt=\"tile\"/> <div class=\"middle\"> <div class=\"text\"> Coming Soon...</div> </div> </div>"
+			//text+= "<div id=\"tile"+i+"\" class=\"tiles\" > <img id=\"tileimg\" src=\"images/coming.jpg\" alt=\"tile\"/> <div class=\"middle\"> <div class=\"text\"> Coming Soon...</div> </div> </div>"
 			document.getElementById("maintiles").innerHTML = text;
 		</script>
 
