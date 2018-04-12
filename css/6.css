@@ -108,7 +108,7 @@ video{
 .righttext{
   display: table-cell;
   vertical-align: middle;
-  text-align: center;
+  text-align: left;
   padding: 50px;
   font-family: Montserrat;
   font-size: 40px;
@@ -119,7 +119,7 @@ video{
 .lefttext{
   display: table-cell;
   vertical-align: middle;
-  text-align: center;
+  text-align: left;
   padding: 50px;
   font-family: Montserrat;
   font-size: 40px;
