@@ -53,7 +53,7 @@ $( function() {
 		});
 		$("iframe").each( function(){
 			$(this).attr('src', 'data/interactiveplaceholder.html');
-			$("#cvinteractive").attr('src', 'https://drive.google.com/file/d/0B1yl-3Rq59Y0bFo0MVk1TEUyQVU/preview');
+			$("#cvinteractive").attr('src', 'https://drive.google.com/file/d/1ndw6TvAA8zmv8ig87TppRAtFuu5mpRoK/preview');
 		})
 	});
 
